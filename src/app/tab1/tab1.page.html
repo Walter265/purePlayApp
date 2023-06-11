@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+      <div class="text-center font-bold ">Movies</div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <app-header-card imgName="../../assets/movie.png" header="Movie Malawi List"></app-header-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Movies List</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content *ngFor="let movi of movies">
+      <app-card Movies="1" imageMovie="{{ movi.show.image.medium }}" name= "{{ movi.show.name }}" summary="{{ movi.show.summary }}"></app-card>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

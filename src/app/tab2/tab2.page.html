@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <div class="text-center font-bold ">University</div>
+</ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <app-header-card imgName="../../assets/unima.png" header="Malawi University List"></app-header-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>University List</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content *ngFor="let item of university">
+      <app-card University="1" name="{{ item.name }}" country="{{ item.country }}"></app-card>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

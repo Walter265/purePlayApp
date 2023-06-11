@@ -1,0 +1,10 @@
+.text-truncate {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Maximum number of lines to show initially */
+    -webkit-box-orient: vertical;
+  }
+  
+  .read-more {
+    display: none;
+  }

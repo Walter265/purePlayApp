@@ -1,0 +1,7 @@
+{
+  "name": "purePlayApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

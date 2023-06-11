@@ -1,0 +1,18 @@
+<div class="container flex justify-center items-center">
+  <div class="drop-shadow-lg px-2 border border-gray-200 rounded-md">
+    <div *ngIf="Movies">
+      <img class="w-screen flex justify-center items-center" [src]="imageMovie" alt="" srcset="">
+      <div class="text-lg font-semibold tracking-wide text-left my-3">{{ name }}</div>
+      <div class="truncated-content">
+        <p class="mb-3 text-truncate">{{ summary }}</p>
+      </div>
+    </div>
+    <div *ngIf="University">
+      <img src="../../assets/versity.png" alt="" srcset="">
+      <div *ngIf="name" class="my-3 flex items-center flex-col">
+        <div class="text-base font-medium tracking-wide">{{ name }}</div>
+        <div class="text-base font-medium tracking-wide">{{ country }}</div>
+      </div>
+    </div>
+  </div>
+</div>
